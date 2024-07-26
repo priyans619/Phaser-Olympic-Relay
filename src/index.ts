@@ -1,5 +1,5 @@
 import { Game, Types } from 'phaser';
-import { LoadingScene } from './scenes';
+import { Level1, LoadingScene } from './scenes';
 
 declare global {
   interface Window {
@@ -38,7 +38,7 @@ const gameConfig: Types.Core.GameConfig = {
   audio: {
     disableWebAudio: false,
   },
-  scene: [LoadingScene],
+  scene: [LoadingScene, Level1],
 };
 
 // A global function for resizing the game
