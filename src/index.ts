@@ -48,3 +48,4 @@ window.sizeChanged = () => {
 };
 window.onresize = () => window.sizeChanged();
 
+window.game = new Game(gameConfig);
