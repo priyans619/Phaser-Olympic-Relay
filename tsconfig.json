@@ -13,10 +13,11 @@
     "baseUrl": "."
   },
   "include": [
-    "src/**/*.ts"
+    "./index.d.ts",
+    "**/*.ts"
   ],
   "exclude": [
     "node_modules",
-    "dist"
+    "./dist/"
   ]
 }
