@@ -1,6 +1,13 @@
 import { Game, Types } from 'phaser';
 import { LoadingScene } from './scenes';
 
+declare global {
+  interface Window {
+    sizeChanged: () => void;
+    game: Phaser.Game;
+  }
+}
+
 const gameConfig: Types.Core.GameConfig = {
 	title: 'Phaser game tutorial',
   type: Phaser.WEBGL,
